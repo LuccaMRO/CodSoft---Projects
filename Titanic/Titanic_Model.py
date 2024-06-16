@@ -20,7 +20,7 @@ from sklearn.naive_bayes import GaussianNB
 
 from sklearn.model_selection import cross_val_score,StratifiedKFold, train_test_split,GridSearchCV
 
-data_set = r'C:\Users\mrolu\OneDrive\Documents\CodSoft - Projects\Titanic\Titanic-Dataset.csv'
+data_set = r'C:\Users\mrolu\OneDrive\Documents\CodSoft---Projects\Titanic\Titanic-Dataset.csv'
 df = pd.read_csv(data_set)
 
 # print(df)
