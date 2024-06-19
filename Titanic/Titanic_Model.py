@@ -56,6 +56,8 @@ print(train_df.groupby(['Family_Size_Grouped'],
 
 print(train_df.groupby(['Embarked'], as_index=False)['Survived'].mean())
 
+print(sns.displot(data=train_df, x='Age', hue='Survived', multiple='stack', palette='Blues', fill=True))
+
 g = sns.kdeplot(train_df['Age'][(train_df['Survived'] == 0) & (
     train_df['Age'].notnull())], color='Red', fill=True)
 g = sns.kdeplot(train_df['Age'][(train_df['Survived'] == 1) & (
